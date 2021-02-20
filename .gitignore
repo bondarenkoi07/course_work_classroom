@@ -1,0 +1,7 @@
+vendor
+*.lock
+*.toml
+.idea
+static/css/bootstrap*
+static/js/bootstrap*
+static/js/

@@ -1,0 +1,38 @@
+.image-active{
+    filter: drop-shadow( 0px 0px 4px yellow);
+    -webkit-filter: drop-shadow( 0px 0px 4px yellow);
+}
+header {
+    opacity: .7;
+    color: white;
+    background-color: #1166bb;
+    border-bottom-color: #0dcaf0;
+}
+
+footer img{
+    margin-top: 10px;
+    background-color:inherit;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration:none !important;
+}
+
+a.footer-link{
+    background-color:#0dcaf0;
+    border-radius: 5px;
+}
+footer{
+    opacity: .7;
+    margin-top: 10px;
+    border-top-color: #0dcaf0;
+    color: white;
+    background-color:#1166bb;
+}
+
+header img{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color:white;
+}

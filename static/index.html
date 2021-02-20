@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"   type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet"   type="text/css" href="css/classroom.css">
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@latest/dist/svg.min.js"></script>
+    <title>Configuration</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-xl-end align-items-center">
+                <div class="col-xl-1">
+                    <img src="favicon.png" width="50px" height="50px" class="rounded">
+                </div>
+                <div class="col-xl-7 text-xl-start">
+                    <h4>Конфигурация Аудитории</h4>
+                </div>
+                <div class="col-xl-2">
+                    <a href="#description"><h4>О проекте</h4></a>
+                </div>
+                <div class="col-xl-2">
+                    <a href="#contact"><h4>Контакты</h4></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="text-center">
+                <h1>Схема аудитории</h1>
+            </div>
+        </div>
+        <div class="row justify-content-main">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 h-100">
+                <div id="classroom_schema"></div>
+            </div>
+            <div class="col-xl-2"><div id="error"></div></div>
+        </div>
+        <div class="row justify-content-center align-items-center" id="buttons">
+            <div class="col-xl text-xl-end"></div>
+            <div class="col-xl text-xl-center"><button name="conditioner" value="false" class="btn btn-primary">Кондиционер</button></div>
+            <div class="col-xl text-xl-center"><button name="screen" value="false" class="btn btn-primary">Экран</button></div>
+            <div class="col-xl text-xl-center"><button name="projector" value="false" class="btn btn-primary">Проектор</button></div>
+            <div class="col-xl text-xl-center"><button name="lock" value="true" class="btn btn-primary">Замок</button></div>
+            <div class="col-xl text-xl-end">
+                <div id="active-devices">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container pt-lg-3">
+            <div class="row mb-lg-4 ">
+                <div class="col-xl">
+                    <a name="description"><h3 >Описание проекта</h3></a>
+                    <div>
+                        Данное веб-приложение является реализацией поставленной задачи в курсовой работе. Для решения поставленной задачи применялся стек технологий:фреймворк <a href="#goji">goji</a> и веб-инструментарий <a href="#gorilla">gorilla</a> для языка программирования GO, JQuery и <a href="#svgjs">SVG.js</a> для javascript. Статический файлы обслуживается http-клиентом Nginx. Исходный код приложения выложен на гитхаб.
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-lg-4" >
+                <div class="col-xl">
+                    <a name="goji"><h4>Goji framework</h4><img src="image/goji.png" width="100px" height="100px"></a>
+                    <div>
+                        Goji - это мультиплексор HTTP-запросов, аналогичный net/http.ServeMux. Он сравнивает входящие запросы со списком зарегистрированных шаблонов и отправляет их в http.Handler, который соответствует первому совпадающему шаблону.
+                        <a href="https://goji.io" class="footer-link">Подробнее о фреймворке</a>
+                    </div>
+                </div>
+                <div class="col-xl">
+                    <a name="svgjs"><h4>SVG.js</h4><img src="https://svgjs.com/docs/3.0/assets/images/logo-svg-js-01d-128.png" width="100px" height="100px"></a>
+                    <div>
+                        <p>Легкая библиотека для управления и анимации SVG. SVG.js не имеет зависимостей и стремится быть как можно более компактным, обеспечивая при этом почти полное покрытие спецификации SVG. Если вы еще не уверены, то вот несколько основных моментов. SVG.js работает быстро. Очевидно, не так быстро, как vanilla js, но во много раз быстрее, чем Snap.js Создание и управление SVG с помощью одного только JavaScript довольно многословно. В проекте использован для отрисовки схемы учебной аудитории.</p>
+                        <a href="https://svgjs.com/docs/3.0/" class="footer-link">Подробнее о фреймворке</a>
+                    </div>
+                </div>
+                <div class="col-xl">
+                    <a name="gorilla"><h4>Gorilla web-toolkit</h4><img src="image/gorilla.jpg" width="100px" height="100px" class="rounded-3"></a>
+                    <div>
+                        <p>Gorilla - это веб-инструментарий для языка программирования Go. В даном проекте использован пакет <a href="https://www.gorillatoolkit.org/pkg/websocket" class="footer-link">gorilla/websocket</a>, имплементирующий протокол WebSocket, определенный в <a href="http://tools.ietf.org/html/rfc6455" class="footer-link">RFC 6455</a>. В данном проекте использовался для непрерывного обмена данных между клиентом и бэкендом.</p>
+                        <a href="https://www.gorillatoolkit.org" class="footer-link">Подробнее о фреймворке</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pb-lg-4"  name="gitub">
+                <div class="col-xl">
+                    <a href="https://github.com/bondarenkoi07"><h4>Мой github-профиль <img src="image/GitHub-Mark-Light-32px.png"></h4></a>
+                    <div>
+                        Тут можно посмотреть мои другие проекты и ЛР/КР.
+                    </div>
+                </div>
+                <div class="col-xl">
+                    <a name="contact"><h4>Контакты</h4></a>
+                    <div>
+                    </div>
+                </div>
+                <div class="col-xl">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/WebSocket.js" defer></script>
+</body>
+</html>
