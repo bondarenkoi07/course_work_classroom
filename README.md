@@ -1,2 +1,2 @@
 # course_work_classroom
-Working URL: db1.mati.su/coursework 
+Working URL: http://db1.mati.su/coursework 
